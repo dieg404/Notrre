@@ -1,11 +1,10 @@
 #Notas
-#V1: Se establecen la funcion que pregunta cuantas notas tiene una materia y se inicia el codigo donde se pregunta las materias que vera, el nombre y se guarda en una lista.
+#V1.1: Se agrega contador de posicioon de fila y columna, tambien se impelmenta una matriz
 
 
 
 #Matriz donde van los datos de las materias
-subject = [
-           []
+subjectt = [
            ]
 
 #Posicion de fila
@@ -19,6 +18,7 @@ def notes():
     nt = int(input("Ingrese cuantas notas tiene esta materia: "))
     for i in range(nt):
         sb = (f"Ingrese de que es la nota numero {i+1}: ")
+        
 
 
 
@@ -26,8 +26,8 @@ def notes():
 subject = int(input("Ingrese cuantas materias esta viendo: "))
 for i in range (subject):
     sub = input(f"Ingrese su materia numero {i+1}: ")
-    subject.append([sub])
+    subjectt.append([sub])
     
 
-print(subject)
+print(subjectt)
 
